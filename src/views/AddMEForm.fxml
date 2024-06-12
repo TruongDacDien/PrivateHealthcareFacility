@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXTableView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="scenePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="687.0" prefWidth="888.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AddMEFormController">
+   <children>
+      <AnchorPane layoutX="28.0" layoutY="26.4" prefHeight="344.0" prefWidth="549.0" style="-fx-background-color: #CCFFFF;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color opacity="0.30091190338134766" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <Label layoutX="14.0" layoutY="26.0" prefHeight="54.0" prefWidth="320.0" text="Add form">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <MFXButton fx:id="okBtn" buttonType="RAISED" layoutX="657.0" layoutY="646.0" prefHeight="26.0" prefWidth="105.0" text="Ok" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="125.4" />
+            <MFXTableView fx:id="tablePatient" layoutX="38.0" layoutY="146.0" prefHeight="255.0" prefWidth="811.0" />
+            <Label layoutX="43.0" layoutY="119.0" text="Select a pateint">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <MFXButton fx:id="selectPatient" buttonType="RAISED" depthLevel="LEVEL1" layoutX="591.0" layoutY="100.0" prefHeight="38.0" prefWidth="110.0" style="-fx-background-color: #8DEEEE;" text="Select">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="21.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/pencil.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </MFXButton>
+            <MFXButton fx:id="addPatientBtn" buttonType="RAISED" depthLevel="LEVEL1" layoutX="717.0" layoutY="100.0" prefHeight="38.0" prefWidth="131.0" style="-fx-background-color: #8DEEEE;" text="Add new">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="21.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/add.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </MFXButton>
+            <Label layoutX="38.0" layoutY="425.0" prefHeight="62.0" prefWidth="97.0" text="Pre-existing condition:" wrapText="true">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextArea layoutX="140.0" layoutY="425.0" prefHeight="82.0" prefWidth="711.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextArea>
+            <Label layoutX="38.0" layoutY="516.0" text="Symptoms:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="examination_symptoms" layoutX="141.0" layoutY="516.0" prefHeight="82.0" prefWidth="711.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextArea>
+         </children>
+      </AnchorPane>
+      <MFXButton fx:id="cancelBtn" buttonType="RAISED" layoutX="511.0" layoutY="350.0" prefHeight="26.0" prefWidth="105.0" text="Cancel" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+   </children>
+</AnchorPane>

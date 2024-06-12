@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXComboBox?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="scenePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="269.0" prefWidth="579.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AddSubclinicalDialogController">
+   <children>
+      <AnchorPane layoutX="28.0" layoutY="26.4" prefHeight="318.0" prefWidth="569.0" style="-fx-background-color: #CCFFFF;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color opacity="0.30091190338134766" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <Label layoutX="32.0" layoutY="14.0" prefHeight="54.0" prefWidth="320.0" text="Add sub-clinical">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="18.0" layoutY="68.0" text="Sub-clinical name:" AnchorPane.leftAnchor="18.0" AnchorPane.topAnchor="68.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <MFXComboBox fx:id="sub_name" layoutX="223.0" layoutY="68.0" maxHeight="36.0" minHeight="36.0" prefHeight="36.0" prefWidth="338.0" />
+            <Label layoutX="18.0" layoutY="166.0" text="Diagnosis:">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <MFXTextField fx:id="sub_diagnosis" layoutX="224.0" layoutY="166.0" maxHeight="36.0" minHeight="36.0" prefHeight="50.0" prefWidth="337.0" />
+            <MFXButton fx:id="okBtn" buttonType="RAISED" layoutX="336.0" layoutY="229.0" prefHeight="26.0" prefWidth="105.0" text="Ok" />
+            <MFXButton fx:id="cancelBtn" buttonType="RAISED" layoutX="451.0" layoutY="229.0" prefHeight="26.0" prefWidth="105.0" text="Cancel" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="22.66666666666663" />
+            <Label layoutX="18.0" layoutY="117.0" text="Doctor ">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <MFXComboBox fx:id="sub_doctor" layoutX="224.0" layoutY="117.0" maxHeight="36.0" minHeight="36.0" prefHeight="36.0" prefWidth="338.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
